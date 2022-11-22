@@ -1,48 +1,46 @@
 #include<iostream>
 using namespace std;
 
-class Addtion
+class math
 {
 	public:
-		Addtion(int a1,int a2)
+		
+		void mat(int a, int b)
 		{
-			cout<<"Addtion of a1+a2 ="<<a1+a2<<endl;
-		}	
-};
-class sub
-{
-	public:
-		sub(int a1,int a2)
+			
+			cout<<"Addition of "<<a<<" and "<<b<<" = "<<a+b<<endl;
+		}
+		void mat(int x,double y)
 		{
-			cout<<"subtraction of a1-a2 ="<<a1-a2<<endl;
-		}	
-};
-class mul
-{
-	public:
-		mul(int a1,int a2)
+			cout<<"Subtraction of "<<x<<" and "<<y<<" = "<<x-y<<endl;
+		}
+		void mat(double i, double j)
 		{
-			cout<<"multipliction of a1*a2 ="<<a1*a2<<endl;
-		}	
-};
-class Div
-{
-	public:
-		Div(int a1,int a2)
+			cout<<"Multiplication of "<<i<<" and "<<j<<" = "<<i*j<<endl;
+		}
+		void mat(double p, int q)
 		{
-			cout<<"division of a1/a2 ="<<a1/a2<<endl;
-		}	
+			
+			cout<<"Division of "<<p<<" and "<<q<<" = "<<p/q<<endl;
+}
 };
 
 int main()
-{	
-	int a1,a2;
-	cout<<"Enter number a1 and a2"<<endl;
-	cin>>a1>>a2;
-	Addtion ob(a1,a2);
-	sub obj1(a1,a2);
-	mul obj2(a1,a2);	
-	Div obj3(a1,a2);
-	
-	return 0;
+{
+	int a,b,x,q;
+	double y,i,j,p;
+	cout<<"enter a,b values"<<endl;
+	cin>>a>>b;
+		cout<<"enter x,y values"<<endl;
+	cin>>x>>y;
+		cout<<"enter i,j values"<<endl;
+	cin>>i>>j;
+		cout<<"enter p,q values"<<endl;
+	cin>>p>>q;
+	math obj;
+	obj.mat(a,b);
+	obj.mat(x,y);
+	obj.mat(i,j);
+    obj.mat(p,q);
+	return 0; 
 }
